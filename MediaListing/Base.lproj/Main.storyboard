@@ -64,7 +64,6 @@
                                                 <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="4Zf-ja-MNB" secondAttribute="bottom" constant="5" id="d39-8y-bn9"/>
                                                 <constraint firstItem="AV9-xa-iXc" firstAttribute="top" secondItem="S3N-6l-BRv" secondAttribute="top" constant="5" id="e71-Dv-bUW"/>
                                                 <constraint firstItem="4Zf-ja-MNB" firstAttribute="top" secondItem="URw-F7-83e" secondAttribute="top" id="iW2-tK-KOY"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AV9-xa-iXc" secondAttribute="trailing" constant="20" symbolic="YES" id="lWY-fY-W0b"/>
                                                 <constraint firstAttribute="trailing" secondItem="kdS-i5-Y4v" secondAttribute="trailing" constant="19" id="q58-7g-8v3"/>
                                                 <constraint firstItem="URw-F7-83e" firstAttribute="leading" secondItem="AV9-xa-iXc" secondAttribute="leading" id="r0D-GS-k2G"/>
                                                 <constraint firstItem="4Zf-ja-MNB" firstAttribute="leading" secondItem="URw-F7-83e" secondAttribute="trailing" constant="10" id="zB6-ce-Ilg"/>
@@ -77,10 +76,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="hXn-Yv-tsP"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EMW-bW-Wwg"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

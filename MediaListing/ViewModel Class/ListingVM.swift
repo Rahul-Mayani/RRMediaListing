@@ -24,6 +24,29 @@ class ListingVM {
     init() {
         refreshControl.tintColor = R.color.blueColor()!
     }
+    
+    // MARK: - Removed item by swipe to delete action
+    public func deleteItem(_ item: MediaModel) {
+        var list = dataArray.value as [MediaModel]
+
+        guard let index = list.firstIndex(of: item) else { return }
+        
+        // Remove the item at the specified indexPath
+        list.remove(at: index)
+
+        // Inform your subject with the new changes
+        dataArray.accept(list)
+    }
+    /*
+    public func removeItem(at indexPath: IndexPath) {
+        var list = dataArray.value as [MediaModel]
+
+        // Remove the item at the specified indexPath
+        list.remove(at: indexPath.row)
+
+        // Inform your subject with the new changes
+        dataArray.accept(list)
+    }*/
 }
 
 // MARK: - API -
